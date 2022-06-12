@@ -33,11 +33,11 @@ public class SideEffects {
         if (false | (++thisNumber > 0)) System.out.println("13 should be printed BECAUSE thisNumber is " + thisNumber);
         if (false || true) System.out.println("14 this should be printed");
         if (false || (++thisNumber > 0)) System.out.println("15 should be printed BECAUSE thisNumber is " + thisNumber);
-        if (false & false) System.out.println("16 this should NOT!! be printed");
+        if (false & true) System.out.println("16 this should NOT!! be printed");
         if (false & (++thisNumber > 0)) System.out.println("17 this should NOT!! be printed but thisNumber is "+ thisNumber);
-        if (false && false) System.out.println("18 this should NOT!! be printed");
+        if (false && true) System.out.println("18 this should NOT!! be printed");
         if (false && (++thisNumber > 0)) System.out.println("19 this should NOT!! be printed");
-         if (false ^ false) System.out.println("20 this should be printed");
+         if (false ^ true) System.out.println("20 this should be printed");
 
     }
 }
