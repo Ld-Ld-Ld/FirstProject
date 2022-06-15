@@ -9,11 +9,11 @@ public class Pari {
         System.out.println("Введите число:");
         int x = input.nextInt();
 
+        System.out.println("Пары множителей введённого числа: ");
 
-        int y = (int) Math.sqrt(x);
-
-        System.out.println("Пары множителей:  " + y +" и " + y);
-
-
+        for (int y=2; x>y; y++) {
+            if ((x % y) == 0)
+                System.out.print( y + " ");
+        }
     }
 }
