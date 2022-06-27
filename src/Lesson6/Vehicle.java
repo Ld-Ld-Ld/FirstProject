@@ -2,11 +2,11 @@ package Lesson6;
 
 public class Vehicle {
 
-    int passangers;
-    int fuelcap;
-    int mpg;
+    public int passangers;
+    private int fuelcap;
+    private int mpg;
 
-//    eto konstructor:
+    //    eto konstructor:
     Vehicle(int numberOfPassengers, int fuelCapVolume, int milesPerGallon) {
         passangers = numberOfPassengers;
         fuelcap = fuelCapVolume;
@@ -14,26 +14,28 @@ public class Vehicle {
 
     }
 
-//    etot metod ni4ego ne prinimaet i ni4ego ne vozvrashaet
+    //    etot metod ni4ego ne prinimaet i ni4ego ne vozvrashaet
     void range() {
-    System.out.println("maximum distance with full fuelcap is " + fuelcap + mpg + "miles");
+        System.out.println("maximum distance with full fuelcap is " + fuelcap + mpg + "miles");
     }
 
-     void myMethod() {
+    void myMethod() {
         int i;
         for (i=0; i<10; i++) {
             if (i==5) return;
             System.out.println("smth");
         }
-       }
-//    etot metood ni4ego ne prinimaet, no vozvrashet tselo4 znacenia:
-       int rangeInt() {
+    }
+    //    etot metood ni4ego ne prinimaet, no vozvrashet tselocisl znacenia:
+    int rangeInt() {
         return mpg * fuelcap;
-       }
+    }
 
-//       etot metod prinimaet tseloc znacenia i vozvrashet drobnie:
-       double fuelNeeded (int distance) {
-       return (double) distance / mpg;
-       }
+    //       etot metod prinimaet tselocisl znacenia i vozvrashet drobnie:
+    double fuelNeeded (int distance) {
+        return (double) distance / mpg;
+    }
 
 }
+
+
