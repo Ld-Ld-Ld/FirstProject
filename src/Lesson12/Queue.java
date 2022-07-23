@@ -1,5 +1,9 @@
 package Lesson12;
 
+import Package15.Book;
+
+import java.util.List;
+
 public class Queue {
     char q[];
     int putLoc, getLoc;
@@ -23,5 +27,8 @@ public class Queue {
             getLoc++;
             return q[getLoc];
         }
+
+    public void addAll(List<Book> bunchOfBooks) {
     }
+}
 

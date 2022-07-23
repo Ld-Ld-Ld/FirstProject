@@ -2,13 +2,23 @@ package Package15;
 
 import java.util.Objects;
 
-public class Book {
+public class Book  implements Comparable<Book>{
     private int numPages;
     private String author;
     private String name;
     private short yearofpublication;
     private String publishinghouse;
     private boolean isTranslate;
+
+    @Override
+    public int compareTo(Book o) {
+        if (this.yearofpublication > o.yearofpublication)
+            return 1;
+        else if (this.yearofpublication <o.yearofpublication)
+        return -1;
+        else return 0;
+
+    }
 
     enum Genre {
         DETECTIVE,
