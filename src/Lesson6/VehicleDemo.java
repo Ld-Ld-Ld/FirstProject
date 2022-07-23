@@ -17,17 +17,17 @@ public class VehicleDemo {
 
 //        int range1 = mercedes.fuelcap * mercedes.mpg;
 //        int range2 = jeep.fuelcap * jeep.mpg;
-        System.out.println("mercedes can take " + mercedes.passangers + " passengers");
+        System.out.println("mercedes can take " + mercedes.passengers + " passengers");
         mercedes.range();
-        System.out.println("jeep can take " + jeep.passangers + " passengers" );
+        System.out.println("jeep can take " + jeep.passengers + " passengers" );
         jeep.range();
 
         jeep.myMethod();
 
         Vehicle ferrari = mercedes;
-        ferrari.passangers = 12;
+        ferrari.passengers = 12;
 
-        System.out.println(mercedes.passangers);
+        System.out.println(mercedes.passengers);
 
         int howManyMilesJeepCanGo = jeep.rangeInt();
         System.out.println("this one is from method rangeInt: " + howManyMilesJeepCanGo);
